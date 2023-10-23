@@ -12,9 +12,10 @@
     <header>
          <ul>
                      <li>
-                        <img src="./Images/logo-jurassic-park.png" style="height: 80px;"/>                    
+                        <img src="./img/logo-jurassic-park.png" style="height: 80px;"/>                    
                     </li>
-                 
+           </ul> 
+           <ul>
                         <li>
                             <h3>Grégory</h3>
                         </li>
@@ -25,7 +26,7 @@
                          </li>
           </ul>      
     </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid col-xxl-6 col-md-9 col-sm-9">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,14 +61,15 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer>
+       
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~" asp-append-version="true"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -11,6 +11,9 @@ header{
 nav {
     background-color: #8b0000;
 }
+body > div > main > h3{
+    text-align:center;
+}
 header {
     display: flex;
     width: 100%;
@@ -32,14 +35,43 @@ header {
         padding: 0;
     }
 
+body > header > ul > li:nth-child(3) > a{
+    list-style:none;
+    color:white;
+    text-decoration:none;
+}
+
 #navbarSupportedContent {
     width: 100%;
     justify-content: space-around;
+    align-items:baseline;
 }
 
-    #navbarSupportedContent > form > button {
-        background-color: white;
-    }
+body > header > ul:nth-child(1){
+    position:relative;
+    left:4%;
+}
+
+body > header > ul:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    position:relative;
+    right:5%;
+    align-items:end;
+}
+ {
+     }
+body > header > ul:nth-child(2) > li:nth-child(2) > a {
+    color:white;
+    text-decoration:none;
+}
+body > div > main > section > article > figure > ul > li > a {
+    color: #ced02d;
+}
+#navbarSupportedContent > form > button {
+    background-color: white;
+}
 
         #navbarSupportedContent > form > button:hover {
             background-color: black;
@@ -61,7 +93,7 @@ body > header > ul > ul > li:nth-child(2) > a {
     justify-content: space-around;
 }
 /*Card*/
-body > div > main > div > section > article > figure > ul {
+body > div > main > section > article > figure > ul {
     padding-top: 12px;
     color: #ced02d;
     color: white;
@@ -73,7 +105,7 @@ body > div > main > div > section > article > figure > ul > li:nth-child(2) > a 
     font-size: medium;
 }
 
-body > div > main > div > section > article > figure {
+body > div > main > section > article > figure {
     display: flex;
     align-items: center;
     margin: 0 !important;
@@ -86,8 +118,8 @@ body > div > main > div > section > article > figure {
     left: 0;
 }
 
-body > div > main > div > section > article {
-    margin-top: 12px;
+body > div > main > section > article {
+   
     overflow: hidden;
 }
 
@@ -108,7 +140,7 @@ body > div > main > div > section > article {
         border-radius: 8px;
     }
 
-body > div > main > div > section {
+body > div > main > section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -117,12 +149,12 @@ body > div > main > div > section {
     border-radius: 8px;
 }
 
-    body > div > main > div > section > article > figure > ul > li > h5 {
+    body > div > main > section > article > figure > ul > li > h5 {
         font-size: medium;
         color: white;
     }
 
-    body > div > main > div > section > article {
+    body > div > main > section > article {
         position: relative;
         width: 300px;
         height: 300px;
@@ -134,9 +166,13 @@ body > div > main > div > section {
         transition-delay: 0.400ms;
     }
 
-        body > div > main > div > section > article:hover {
-            transform: scale(1.1);
-        }
+#navbarSupportedContent > ul{
+    display:flex;  
+}
+
+body > div > main > section > article:hover {
+    transform: scale(1.1);
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     header > ul {

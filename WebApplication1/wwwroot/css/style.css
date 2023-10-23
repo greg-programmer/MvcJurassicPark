@@ -1,0 +1,203 @@
+header{
+    width:100%;
+    height: 300px;
+    background-color:black;
+}
+
+* {
+    list-style: none;
+}
+
+nav {
+    background-color: #8b0000;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+
+    header > ul {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: medium;
+        width: 90%;
+        height: 100%;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+    }
+
+#navbarSupportedContent {
+    width: 100%;
+    justify-content: space-around;
+}
+
+    #navbarSupportedContent > form > button {
+        background-color: white;
+    }
+
+        #navbarSupportedContent > form > button:hover {
+            background-color: black;
+            color: white;
+        }
+
+body > header > ul > ul > li:nth-child(2) > a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbarSupportedContent > ul > li > a {
+    text-decoration: none;
+    color: #ced02d;
+}
+
+#navbarSupportedContent > ul {
+    width: 60%;
+    justify-content: space-around;
+}
+/*Card*/
+body > div > main > div > section > article > figure > ul {
+    padding-top: 12px;
+    color: #ced02d;
+    color: white;
+    font-size: medium;
+}
+
+body > div > main > div > section > article > figure > ul > li:nth-child(2) > a {
+    color: #ced02d;
+    font-size: medium;
+}
+
+body > div > main > div > section > article > figure {
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    height: 148px;
+    bottom: 0;
+    padding: 0;
+    left: 0;
+}
+
+body > div > main > div > section > article {
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+
+.main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .main_image > button {
+        padding: 12px;
+        font-size: x-large;
+        background-color: black;
+        color: white;
+        border: solid 2px #ced02d;
+        font-family: Arial, Helvetica, sans-ser;
+        border-radius: 8px;
+    }
+
+body > div > main > div > section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 12px 12px 12px;
+    margin: 0 0 20px 0;
+    border-radius: 8px;
+}
+
+    body > div > main > div > section > article > figure > ul > li > h5 {
+        font-size: medium;
+        color: white;
+    }
+
+    body > div > main > div > section > article {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border: solid 2px #ced02d;
+        border-radius: 8px;
+        transform: scale(1);
+        transition-duration: 0.4s;
+        transition-delay: 0.400ms;
+    }
+
+        body > div > main > div > section > article:hover {
+            transform: scale(1.1);
+        }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header > ul {
+        width: 95%;
+    }
+
+    #navbarSupportedContent > ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    body > nav > div {
+        width: 98%;
+    }
+
+    body > div > main > div > section {
+        justify-content:center;
+    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header > ul {
+        width: 100%;
+    }
+
+    #navbarSupportedContent > ul {
+        flex-direction: column;
+        padding: 0;
+    } 
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    header > ul {
+        width: 90%;
+    }
+
+    #navbarSupportedContent > ul {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header > ul {
+        width: 85%;
+    }
+
+    #navbarSupportedContent > ul {
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    header > ul {
+        width: 80%;
+    }
+
+    #navbarSupportedContent > ul {
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+    }
+}
